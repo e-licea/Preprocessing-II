@@ -1,1 +1,14 @@
 // Mixins in here
+.br(@px){
+    border-radius: @px;
+}
+
+.colorbgfs(@color;@bg;@fsize){
+    color:@color;
+    background-color: @bg;
+    font-size: @fsize;
+}
+
+.border(@color;@style;@px){
+    border-bottom: @color @style @px;
+}
