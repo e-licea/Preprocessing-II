@@ -168,8 +168,14 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    padding-left: 5%;
+    padding-right: 5% ;
+  }
+}
 .navdiv {
-  width: 1000px;
+  max-width: 1000px;
   border-bottom: #C0C0C0 dashed 3px;
   margin: 0 auto;
   display: flex;
@@ -180,6 +186,13 @@ img {
   padding-right: 10%;
   height: 100px;
 }
+@media (max-width: 500px) {
+  .navdiv {
+    max-width: 500px;
+    flex-direction: column;
+    padding-bottom: 3% ;
+  }
+}
 .navdiv h1 {
   font-size: 4.5rem;
 }
@@ -189,10 +202,20 @@ img {
   align-items: center;
   width: 300px;
 }
+@media (max-width: 500px) {
+  .navdiv nav {
+    width: 450px;
+  }
+}
 .navdiv nav a {
   text-decoration: none;
   color: #212529;
   font-size: 1.7rem;
+}
+@media (max-width: 500px) {
+  .navdiv nav a {
+    font-size: 1.4rem;
+  }
 }
 .footer {
   width: 100%;
@@ -211,13 +234,28 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -225,6 +263,11 @@ img {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -238,6 +281,12 @@ img {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    margin: 0;
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -247,9 +296,20 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+  }
 }
 .home .content-pick .destination .btn {
   text-align: center;

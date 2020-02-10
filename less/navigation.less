@@ -1,7 +1,7 @@
 // Navigation Styles here
 
 .navdiv{
-    width: 1000px;
+    max-width: 1000px;
     .border(@silver; dashed; 3px);
     margin: 0 auto;
     display: flex;
@@ -11,6 +11,11 @@
     padding-left: 10%;
     padding-right: 10%;
     height: 100px;
+    @media (max-width: 500px){
+        max-width: 500px;
+        flex-direction: column;
+        padding-bottom: 3% ;
+    }
     h1{
         font-size: 4.5rem;
         
@@ -21,13 +26,19 @@
         justify-content: space-evenly;
         align-items: center;
         width: 300px;
-        
+        @media (max-width: 500px){
+            width: 450px;
+            
+        }
             
         a{
           
             text-decoration: none;
             color: @shark;
             font-size: 1.7rem;
+            @media (max-width: 500px){
+                font-size: 1.4rem;
+            }
         }
     }
 
